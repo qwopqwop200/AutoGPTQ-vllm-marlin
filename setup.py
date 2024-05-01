@@ -204,6 +204,17 @@ if BUILD_CUDA_EXT:
                     ]
                 )
             )
+            # code form https://github.com/neuralmagic/nm-vllm
+            extensions.append(
+                cpp_extension.CUDAExtension(
+                    'autogptq_gptq_marlin_cuda',
+                    [
+                        'autogptq_extension/gptq_marlin/gptq_marlin_cuda.cpp',
+                        'autogptq_extension/gptq_marlin/gptq_marlin.cu',
+                        'autogptq_extension/gptq_marlin/gptq_marlin_repack.cu'
+                    ]
+                )
+            )
 
     if os.name == "nt":
         # On Windows, fix an error LNK2001: unresolved external symbol cublasHgemm bug in the compilation
