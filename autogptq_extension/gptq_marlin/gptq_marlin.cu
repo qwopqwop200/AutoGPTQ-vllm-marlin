@@ -19,7 +19,7 @@
  * Adapted from https://github.com/IST-DASLab/marlin
  */
 /*
- * get code form https://github.com/neuralmagic/nm-vllm
+ * get code form https://github.com/vllm-project/vllm
  */
 
 #include "gptq_marlin.cuh"

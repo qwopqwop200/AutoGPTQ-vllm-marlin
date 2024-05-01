@@ -204,7 +204,7 @@ if BUILD_CUDA_EXT:
                     ]
                 )
             )
-            # code form https://github.com/neuralmagic/nm-vllm
+            # code form https://github.com/vllm-project/vllm
             extensions.append(
                 cpp_extension.CUDAExtension(
                     'autogptq_gptq_marlin_cuda',
