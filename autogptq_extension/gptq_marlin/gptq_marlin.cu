@@ -17,7 +17,8 @@
 
 /*
  * Adapted from https://github.com/IST-DASLab/marlin
- */
+ * This code from https://github.com/vllm-project/vllm
+*/
 
 #include "gptq_marlin.cuh"
 
